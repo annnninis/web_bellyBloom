@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prodokter.css">
+    <title>Profil Ibu Hamil</title>
+</head>
+<body>
+   <!-- Navbar -->
+   <div class="navbar">
+    <a href="main.html" class="logo">
+        <img src="logo.png" alt="Logo Website">
+    </a>
+    <div class="menu">
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Fitur</a>
+        <a href="#layanan">Artikel</a>
+        <a href="#kontak">Tentang Kami</a>
+        <img class="profile-pic" src="ava.png" alt="Profile">
+    </div>
+</div>
+
+    <!-- Form Lengkapi Profil -->
+    <div class="container">
+        <div class="form-box">
+            <h1 class="title">Lengkapi Profilmu</h1>
+            <form>
+                <input type="text" placeholder="Nama" required class="input-text">
+                <input type="number" placeholder="Nomor STR (Surat Tanda Registrasi Dokter)" required class="input-text">
+                <input type="number" placeholder="Nomor SIP (Surat Izin Praktik)" required class="input-text">
+                <select required>
+                    <option value="" disabled selected>Spesialisasi</option>
+                    <option value="umum">Dokter Umum</option>
+                    <option value="anak">Dokter Anak</option>
+                    <option value="gigi">Dokter Gigi</option>
+                    <option value="bedah">Dokter Bedah</option>
+                </select>
+                <button type="button" onclick="window.location.href='ldDokter.html'">Daftar</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

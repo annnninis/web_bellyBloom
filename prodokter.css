@@ -1,0 +1,155 @@
+/* Style dasar */
+body {
+    background-image: url('roleDokter.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+/* Navbar */
+.navbar {
+    background-color: #FFFFFF;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar a {
+    float: left;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar .logo img {
+    float: left;
+    height: 40px; 
+    width: auto;
+}
+
+.profile-pic {
+    width: auto;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Container Form */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Form Box */
+.form-box {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    width: 400px;
+}
+
+.form-box h1 {
+    font-size:30px;
+    font-weight: bold;
+    color: #6498b0;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+/* Input Fields */
+input, select {
+    width: 100%; 
+    padding: 12px; 
+    margin-bottom: 25px ;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    box-sizing: border-box; 
+}
+
+.input-text::placeholder,
+.input-number::placeholder {
+    color: black; 
+}
+
+
+select {
+    appearance: none; /* Hilangkan tampilan default browser */
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    cursor: pointer;
+}
+
+
+input:focus, select:focus {
+    border-color: rgb(100, 152, 176);
+    outline: none;
+    box-shadow: 0 0 5px rgb(100, 152, 176, 0.5);
+}
+
+/* Button */
+button {
+    color: #FFFFFF;
+    width: 100%;
+    padding: 12px;
+    background: #6498b0;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #e6e5e5;
+}
+
+/* Menghilangkan panah pada input number di semua browser */
+input[type=number] {
+    appearance: textfield;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+/* Untuk semua browser */
+input[type=number] {
+    appearance: textfield; /* Untuk browser modern */
+    -moz-appearance: textfield; /* Untuk Firefox */
+    -webkit-appearance: textfield; /* Untuk Chrome, Safari, Edge */
+}
+
+/* Khusus untuk WebKit-based browsers (Chrome, Safari, Edge) */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Khusus untuk Firefox */
+input[type=number]::-moz-inner-spin-button,
+input[type=number]::-moz-outer-spin-button {
+    -moz-appearance: none;
+    margin: 0;
+}
+
+ 

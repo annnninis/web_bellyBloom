@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="pilihrole.css">
+    <title>Belly Bloom</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="main.html" class="logo">
+            <img src="logo.png" alt="Logo Website">
+        </a>
+        <div class="menu">
+            <a href="#beranda">Beranda</a>
+            <a href="#tentang">Fitur</a>
+            <a href="#layanan">Artikel</a>
+            <a href="#kontak">Tentang Kami</a>
+            <img class="profile-pic" src="ava.png" alt="Profile">
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Lengkapi Profilmu</h1>
+        <p>Pilih Rolemu</p>
+
+        <!-- Pilihan Role -->
+        <div class="role-selections">
+            <!-- Ibu Hamil -->
+            <div class="role" onclick="selectRole(this, 'prohamil.html')">
+                <div class="image-container">
+                    <img src="roleHamil.jpg" alt="Ibu Hamil">
+                    <span class="checkmark">✔</span>
+                </div>
+                <p>Ibu Hamil</p>
+            </div>
+
+            <!-- Dokter -->
+            <div class="role" onclick="selectRole(this, 'prodokter.html')">
+                <div class="image-container">
+                    <img src="roleDokter.jpg" alt="Dokter">
+                    <span class="checkmark">✔</span>
+                </div>
+                <p>Dokter</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function selectRole(element, targetPage) {
+            // Menghapus kelas 'selected' dari semua peran
+            document.querySelectorAll('.role').forEach(role => {
+                role.classList.remove('selected');
+            });
+
+            // Tandai peran yang dipilih
+            element.classList.add('selected');
+
+            // Pindah ke halaman tujuan setelah sedikit delay (opsional)
+            setTimeout(() => {
+                window.location.href = targetPage;
+            }, 500); // Delay 500ms untuk efek visual
+        }
+    </script>
+</body>
+</html>
